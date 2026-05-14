@@ -76,6 +76,7 @@ def edit_task(filename, task_id, new_description):
 
 #Allows the user type in the terminal and creates subcommands
 parser = argparse.ArgumentParser()
+parser.add_argument("--list-name", default=DEFAULT_FILE)
 subparsers = parser.add_subparsers(dest="command")
 
 add_parser = subparsers.add_parser("add")
@@ -91,10 +92,6 @@ edit_parser = subparsers.add_parser("edit")
 edit_parser.add_argument("id", type=int)
 edit_parser.add_argument("description")
 
-parser.add_argument(
-    "--list_name",
-    default=DEFAULT_FILE
-)
 #Reads all comman line inputs and stores the filename the user wants to put
 args = parser.parse_args()
 filename = args.list_name
