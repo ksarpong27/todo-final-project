@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "category": "Homework",
+        "description": "Study harder",
+        "status": "complete"
+    },
+    {
+        "id": 2,
+        "category": "Work",
+        "description": "Send internship email",
+        "status": "in progress"
+    }
+]
